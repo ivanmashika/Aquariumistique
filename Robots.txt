@@ -1,0 +1,22 @@
+    User-agent: *
+    Disallow: /api/
+    Disallow: /cart.php
+    Disallow: /profile.php
+    Disallow: /logout.php
+    Disallow: /src/
+    Disallow: /temp/
+    Disallow: /config.php
+    Disallow: /*.php?*
+    Disallow: /?*
+
+
+    Disallow: /cart/
+    Disallow: /checkout/
+    Disallow: /order/
+
+    Allow: /index.php
+    Allow: /catalog.php
+    Allow: /about.php
+    Allow: /contacts.php
+
+    Crawl-delay: 2
