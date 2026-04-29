@@ -1,4 +1,6 @@
+
 <?php
+/* Данный скрипт содержит логику добавления товара в корзину (SQL-запросы) */
 require '../config.php';
 $data = json_decode(file_get_contents('php://input'), true);
 $product_id = $data['product_id'];

@@ -1,4 +1,6 @@
+<!-- Общий хэдер для всех страниц, оторажение его на страницах осуществляется с помощью include на каждой отображаемой странице -->
 <?php
+
 require_once __DIR__ . '/config.php';
 $currentUser = getCurrentUser($pdo);
 ?>

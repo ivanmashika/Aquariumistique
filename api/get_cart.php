@@ -1,4 +1,6 @@
+
     <?php
+        /*Данный скрипт получает SQL-запросом товары, находящиеся в корзине. */
     require '../config.php';
     header('Content-Type: application/json');
 

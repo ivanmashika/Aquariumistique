@@ -1,4 +1,5 @@
 <?php
+#Страница "О нас" содержащая информацию
 $pageTitle = 'О нас | AquaStyle'; 
 require 'header.php';
 ?>

@@ -1,5 +1,5 @@
 <?php include 'header.php';
-
+# Страница "Категории" админ-панели
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['add'])) {
         $name = trim($_POST['name']);

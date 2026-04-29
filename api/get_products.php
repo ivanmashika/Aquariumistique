@@ -1,4 +1,6 @@
+
 <?php
+/*Данный скрипт получает товары из базы данных */
 require '../config.php';
 header('Content-Type: application/json');
 

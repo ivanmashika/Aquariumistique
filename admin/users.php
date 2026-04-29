@@ -1,4 +1,5 @@
 <?php include 'header.php';
+#Окно редактирования пользователей
 $users = $pdo->query("SELECT id, name, email, role, created_at FROM users ORDER BY name")->fetchAll();
 ?>
 

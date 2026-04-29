@@ -1,5 +1,5 @@
 <?php include 'header.php';
-
+# Окно редактирования заказов
 // Изменение статуса
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_status'])) {
     $orderId = (int) $_POST['order_id'];

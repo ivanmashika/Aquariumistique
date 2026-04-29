@@ -1,4 +1,5 @@
 <?php require 'config.php';
+#Страница корзины, логика удаления из корзины для неавторизованных пользователей
 if (isset($_GET['remove'])) {
     $product_id = (int) $_GET['remove'];
     $user = getCurrentUser($pdo);
@@ -82,6 +83,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_quantity'])) {
                     </div>
 
                     <?php
+                    #Отображение информации из карточки товара
                     $total = 0;
                     foreach ($items as $item):
                         $price = $item['is_sale'] ? $item['sale_price'] : $item['price'];

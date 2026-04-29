@@ -1,4 +1,5 @@
 <?php
+# Скрипт, содержащий удаления из корзины
 require '../config.php';
 header('Content-Type: application/json');
 error_reporting(E_ALL);

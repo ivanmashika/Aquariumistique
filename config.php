@@ -1,4 +1,5 @@
-<?php
+<?php 
+#Данные для подключения к БД, создание новой сессии
 session_start();
 $host = 'localhost';
 $dbname = 'aquarium_shop';
@@ -17,6 +18,7 @@ if (!isset($_SESSION['session_id'])) {
 }
 $session_id = $_SESSION['session_id'];
 
+#Получение текущего пользователя (для работы с авторизацией)
 function getCurrentUser($pdo)
 {
     if (isset($_SESSION['user_id'])) {
@@ -26,14 +28,15 @@ function getCurrentUser($pdo)
     }
     return null;
 }
+#Проверка пользователя на наличие у него роли администратора
 function isAdmin() {
     $user = getCurrentUser($GLOBALS['pdo']);
     return $user && $user['role'] === 'admin';
 }
-
+#При попытке перейти по URL админ-панели: localhost:/
 function requireAdmin() {
     if (!isAdmin()) {
-        header('Location: /profile.php');
+        header('Location: /Aquariumistique/profile.php');
         exit;
     }
 }

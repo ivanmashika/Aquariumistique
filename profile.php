@@ -48,7 +48,7 @@ if ($_POST && isset($_POST['register'])) {
     }
 }
 
-// Получение заказов пользователя (если есть таблица orders)
+// Получение заказов пользователя
 $orders = [];
 if ($user) {
     $stmt = $pdo->prepare("SELECT * FROM orders WHERE user_id = ? ORDER BY created_at DESC LIMIT 5");

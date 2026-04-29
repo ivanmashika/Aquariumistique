@@ -1,5 +1,5 @@
 <?php include 'header.php';
-
+#Окно редактирования товаров
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_product'])) {
     $name = trim($_POST['name']);
     $category = trim($_POST['category']);

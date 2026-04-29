@@ -2,7 +2,7 @@
 $pageTitle = 'AquaStyle | Главная';
 require 'header.php';
 ?>
-
+<!-- Главная страница -->
 <div class="main-content no-sidebar">
 
     <main class="content">
@@ -39,6 +39,7 @@ require 'header.php';
         <section class="catalogs">
             <div class="catalogs-grid">
                 <?php
+                #Отображение категорий
                 $categories = [
                     'Аквариумы',
                     'Оборудование',

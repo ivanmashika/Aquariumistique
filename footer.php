@@ -1,3 +1,4 @@
+<!-- Общий футер для всех страниц, оторажение его на страницах осуществляется с помощью include на каждой отображаемой странице -->
 <footer class="site-footer">
     <div class="footer-content">
         <div class="footer-col">

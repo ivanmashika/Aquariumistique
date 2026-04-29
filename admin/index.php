@@ -1,4 +1,5 @@
 <?php include 'header.php'; ?>
+<!-- Дэшборд с небольшой статистикой-->
 <h2>Обзор магазина</h2>
 <div class="admin-dashboard-stats">
     <?php
